@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Academy: Седона: Гостинцы</title>
+</head>
+<body>
+	<div class="w-container">
+		<header class="main-header">
+			<nav class="main-navigation">
+				<ul class="site-navigation">
+					<li class="site-navigation-item"><a href="index.html"><img src="" alt="Логотип Sedona"></a></li>
+					<li class="site-navigation-item"><a href="#">Информация</a></li>
+					<li class="site-navigation-item"><a href="#">Фото и видео</a></li>
+					<li class="site-navigation-item"><a href="#">Карта штата</a></li>
+					<li class="site-navigation-item"><a class="current-in-nav" href="#">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+
+				<h1 class="visually-hidden">Гостиницы Седоны</h1>
+
+				<section class="filters">
+					<h2 class="visually-hidden">Поиск гостиниц</h2>
+					<form class="filters-form" action="" method="POST">
+						<fieldset class="filter-fieldset filter-infrastructure">
+							<legend>Инфраструктура:</legend>
+							<div class="fieldset-input-wrapper">
+								<input class="visually-hidden" type="checkbox" name="infra-pool" id="infra-pool" checked>
+								<label for="infra-pool">Бассейн</label>
+								<input class="visually-hidden" type="checkbox" name="infra-parking" id="infra-parking">
+								<label for="infra-parking">Парковка</label>
+								<input class="visually-hidden" type="checkbox" name="infra-wifi" id="infra-wifi">
+								<label for="infra-wifi">Wi-Fi</label>
+							</div>
+						</fieldset>
+						<fieldset class="filter-fieldset filter-type">
+							<legend>Тип жилья:</legend>
+							<div class="fieldset-input-wrapper">
+								<input class="visually-hidden" type="checkbox" name="type-hotel" id="type-hotel" checked>
+								<label for="type-hotel">Гостиница</label>
+								<input class="visually-hidden" type="checkbox" name="type-motel" id="type-motel" checked>
+								<label for="type-motel">Мотель</label>
+								<input class="visually-hidden" type="checkbox" name="type-apartments" id="type-apartments" checked>
+								<label for="type-apartments">Апартаменты</label>
+							</div>
+						</fieldset>
+						<fieldset class="filter-fieldset filter-price">
+							<legend>Стоимость в сутки (Р):</legend>
+							<div class="filter-range">
+								<input type="text" name="inpt-range-min" id="inpt-range-min" placeholder="от 0">
+								<input type="text" name="inpt-range-max" id="inpt-range-max" placeholder="до 3000">
+								<button class="range-btn" type="button"><span class="visually-hidden">Меньшее значение</span></button>
+								<div class="range-transparent-line"></div>
+								<div class="range-above-line"></div>
+								<button class="range-btn" type="button"><span class="visually-hidden">Большее значение</span></button>
+							</div>
+						</fieldset>
+						<button type="submit">Показать</button>
+					</form>
+				</section>
+				<section class="found-variants">
+					<h2>Найдено: 3</h2>
+					<div class="sorting">
+						<h3>Сортировка:</h3>
+						<ul class="sorting-list">
+							<li class="sorting-list-item"><a class="current-in-sorting" href="#">По цене</a></li>
+							<li class="sorting-list-item"><a href="#">По типу</a></li>
+							<li class="sorting-list-item"><a href="#">По рейтингу</a></li>
+							<li class="sorting-list-item"><a class="current-in-arrow arrow-top" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+							<li class="sorting-list-item"><a class="arrow-bottom" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+						</ul>
+					</div>
+					<ul class="found-list">
+						<li class="found-list-item">
+							<img src="" alt="">
+							<div class="found-list-item-descriprion">
+								<h3>Amara Resort & Spa</h3>
+								<dl class="">
+									<dt>Гостиница</dt>
+									<dt>от 4000 руб.</dt>
+								</dl>
+								<a href="#" class="more-info-btn">Подробнее</a>
+								<a href="#" class="booking-btn">Забронировать</a>
+							</div>
+							<div class="found-list-item-ratings"><span>Рейтинг: 8,5</span></div>
+						</li>
+						<li class="found-list-item">
+							<img src="" alt="">
+							<div class="found-list-item-descriprion">
+								<h3>Desert Quail Inn</h3>
+								<dl class="">
+									<dt>Мотель</dt>
+									<dt>от 3000 руб.</dt>
+								</dl>
+								<a href="#" class="more-info-btn">Подробнее</a>
+								<a href="#" class="booking-btn">Забронировать</a>
+							</div>
+							<div class="found-list-item-ratings"><span>Рейтинг: 8,9</span></div>
+						</li>
+						<li class="found-list-item">
+							<img src="" alt="">
+							<div class="found-list-item-descriprion">
+								<h3>Villas at Poco Diablo</h3>
+								<dl class="found-list-item-type-and-price">
+									<dt>Апартаменты</dt>
+									<dt>от 2000 руб.</dt>
+								</dl>
+								<a href="#" class="more-info-btn">Подробнее</a>
+								<a href="#" class="booking-btn">Забронировать</a>
+							</div>
+							<div class="found-list-item-ratings"><span>Рейтинг: 9,2</span></div>
+						</li>
+					</ul>
+				</section>
+		</main>
+		<footer class="main-footer">
+			<span class="sedona-hashtag">#VISITSEDONA</span>
+			<ul class="social-list">
+				<li class="social-list-item social-tw"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+				<li class="social-list-item social-fb"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+				<li class="social-list-item social-yt"><a href="#"><span class="visually-hidden">Youtube</span></a></li>
+			</ul>
+			<div class="sponsor-link">
+				<p>Website by</p>
+				<a href="#"><img src="" alt=""></a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
