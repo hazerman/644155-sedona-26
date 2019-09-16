@@ -27,28 +27,40 @@
 
 				<section class="filters">
 					<h2 class="visually-hidden">Поиск гостиниц</h2>
-					<form class="filters-form" action="" method="POST">
+					<form class="filters-form" action="https://echo.htmlacademy.ru" method="POST">
 						<fieldset class="filter-fieldset filter-infrastructure">
 							<legend>Инфраструктура:</legend>
-							<div class="fieldset-input-wrapper">
-								<input class="visually-hidden" type="checkbox" name="infra-pool" id="infra-pool" checked>
-								<label for="infra-pool">Бассейн</label>
-								<input class="visually-hidden" type="checkbox" name="infra-parking" id="infra-parking">
-								<label for="infra-parking">Парковка</label>
-								<input class="visually-hidden" type="checkbox" name="infra-wifi" id="infra-wifi">
-								<label for="infra-wifi">Wi-Fi</label>
-							</div>
+							<ul class="infrastructure-list">
+								<li class="infrastructure-list-item">
+									<input class="visually-hidden" type="checkbox" name="infra-pool" id="infra-pool" checked>
+									<label for="infra-pool">Бассейн</label>
+								</li>
+								<li class="infrastructure-list-item">
+									<input class="visually-hidden" type="checkbox" name="infra-parking" id="infra-parking">
+									<label for="infra-parking">Парковка</label>
+								</li>
+								<li class="infrastructure-list-item">
+									<input class="visually-hidden" type="checkbox" name="infra-wifi" id="infra-wifi">
+									<label for="infra-wifi">Wi-Fi</label>
+								</li>
+							</ul>
 						</fieldset>
 						<fieldset class="filter-fieldset filter-type">
 							<legend>Тип жилья:</legend>
-							<div class="fieldset-input-wrapper">
-								<input class="visually-hidden" type="checkbox" name="type-hotel" id="type-hotel" checked>
-								<label for="type-hotel">Гостиница</label>
-								<input class="visually-hidden" type="checkbox" name="type-motel" id="type-motel" checked>
-								<label for="type-motel">Мотель</label>
-								<input class="visually-hidden" type="checkbox" name="type-apartments" id="type-apartments" checked>
-								<label for="type-apartments">Апартаменты</label>
-							</div>
+							<ul class="type-list">
+								<li class="type-list-item">
+									<input class="visually-hidden" type="checkbox" name="type-hotel" id="type-hotel" checked>
+									<label for="type-hotel">Гостиница</label>
+								</li>
+								<li class="type-list-item">
+									<input class="visually-hidden" type="checkbox" name="type-motel" id="type-motel" checked>
+									<label for="type-motel">Мотель</label>
+								</li>
+								<li class="type-list-item">
+									<input class="visually-hidden" type="checkbox" name="type-apartments" id="type-apartments" checked>
+									<label for="type-apartments">Апартаменты</label>
+								</li>
+							</ul>
 						</fieldset>
 						<fieldset class="filter-fieldset filter-price">
 							<legend>Стоимость в сутки (Р):</legend>

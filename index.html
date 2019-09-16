@@ -81,6 +81,28 @@
 					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 					<a class="find-hotel-btn" href="#">Поиск гостиницы в Седоне</a>
+					<section class="popup-find-hotel">
+						<h2 class="visually-hidden">Поиск отеля</h2>
+						<form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
+							<p>
+								<label for="find-data-in">Дата заезда:</label>
+								<input type="text" name="find-data-in" id="find-data-in">
+							</p>
+							<p>
+								<label for="find-data-out">Дата заезда:</label>
+								<input type="text" name="find-data-out" id="find-data-out">
+							</p>
+							<p>
+								<label for="find-adults">Взрослые:</label>
+								<input type="text" name="find-adults" id="find-adults">
+							</p>
+							<p>
+								<label for="find-children">Дети:</label>
+								<input type="text" name="find-children" id="find-children">
+							</p>
+							<button class="find-hotel-btn-in" type="submit">Найти</button>
+						</form>
+					</section>
 				</section>
 				<div class="map-wrapper">
 					<!-- map here -->
