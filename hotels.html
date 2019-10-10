@@ -69,15 +69,16 @@
 						<fieldset class="filter-fieldset filter-price">
 							<legend>Стоимость в сутки (Р):</legend>
 							<div class="filter-range">
-								<input type="text" name="inpt-range-min" id="inpt-range-min" placeholder="от 0">
-								<input type="text" name="inpt-range-max" id="inpt-range-max" placeholder="до 3000">
-								<button class="range-btn" type="button"><span class="visually-hidden">Меньшее значение</span></button>
-								<div class="range-transparent-line"></div>
-								<div class="range-above-line"></div>
-								<button class="range-btn" type="button"><span class="visually-hidden">Большее значение</span></button>
+								<input class="input-range range-min" type="text" name="inpt-range-min" id="inpt-range-min" placeholder="от 0">
+								<input class="input-range range-max" type="text" name="inpt-range-max" id="inpt-range-max" placeholder="до 3000">
+								<div class="range-wrapper">
+									<button class="range-btn" type="button"><span class="visually-hidden">Меньшее значение</span></button>
+									<div class="range-line"></div>
+									<button class="range-btn" type="button"><span class="visually-hidden">Большее значение</span></button>
+								</div>
 							</div>
+							<button class="send-form-btn" type="submit">Показать</button>
 						</fieldset>
-						<button class="send-form-btn" type="submit">Показать</button>
 					</form>
 				</section>
 				<section class="found-variants">
@@ -88,8 +89,8 @@
 							<li class="sorting-list-item"><a class="current-in-sorting">По цене</a></li>
 							<li class="sorting-list-item"><a href="#">По типу</a></li>
 							<li class="sorting-list-item"><a href="#">По рейтингу</a></li>
-							<li class="sorting-list-item"><a class="arrow-top" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
-							<li class="sorting-list-item"><a class="current-in-arrow arrow-bottom"><span class="visually-hidden">По убыванию</span></a></li>
+							<li class="sorting-list-item sorting-list-item-arrow"><a class="sorting-arrow arrow-top" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+							<li class="sorting-list-item sorting-list-item-arrow"><a class="current-in-arrow sorting-arrow arrow-bottom"><span class="visually-hidden">По убыванию</span></a></li>
 						</ul>
 					</div>
 					<ul class="found-list">
@@ -99,7 +100,7 @@
 								<h3>Amara Resort & Spa</h3>
 								<dl class="found-list-item-type-and-price">
 									<dt>Гостиница</dt>
-									<dt>от 4000 руб.</dt>
+									<dd>от 4000 р.</dd>
 								</dl>
 								<a href="#" class="more-info-btn">Подробнее</a>
 								<a href="#" class="booking-btn">Забронировать</a>
@@ -112,7 +113,7 @@
 								<h3>Desert Quail Inn</h3>
 								<dl class="found-list-item-type-and-price">
 									<dt>Мотель</dt>
-									<dt>от 3000 руб.</dt>
+									<dd>от 3000 р.</dd>
 								</dl>
 								<a href="#" class="more-info-btn">Подробнее</a>
 								<a href="#" class="booking-btn">Забронировать</a>
@@ -125,7 +126,7 @@
 								<h3>Villas at Poco Diablo</h3>
 								<dl class="found-list-item-type-and-price">
 									<dt>Апартаменты</dt>
-									<dt>от 2000 руб.</dt>
+									<dd>от 2000 р.</dd>
 								</dl>
 								<a href="#" class="more-info-btn">Подробнее</a>
 								<a href="#" class="booking-btn">Забронировать</a>
