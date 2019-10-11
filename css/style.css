@@ -73,7 +73,7 @@ body {
 
 .site-navigation-item:not(.site-navigation-item-logo) {
 	width: 250px;
-	padding: 20px 50px;
+	padding: 15px 50px;
 
 	text-align: center;
 }
