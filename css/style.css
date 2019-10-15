@@ -812,6 +812,7 @@ body {
 	left: 0;
 	z-index: 30;
 
+	display: none;
 	width: 100%;
 	padding: 55px;
 
@@ -819,6 +820,10 @@ body {
 
 	background-color: #ffffff;
 	box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.show-popup {
+	display: block;
 }
 
 .find-hotel-form {
@@ -868,10 +873,6 @@ body {
 	width: 38px;
 
 	text-align: center;
-}
-
-.inpt-wrapper input::placeholder {
-	color: #000000;
 }
 
 .calendar-btn {

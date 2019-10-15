@@ -90,12 +90,12 @@
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<div class="booking-wrapper">
 					<a class="find-hotel-btn" href="#">Поиск гостиницы в Седоне</a>
-					<section class="popup-find-hotel">
+					<section class="popup-find-hotel show-popup">
 						<h2 class="visually-hidden">Поиск отеля</h2>
 						<form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
 							<p class="inpt-wrapper">
 								<label for="find-data-in">Дата заезда:</label>
-								<input type="text" name="find-data-in" id="find-data-in" placeholder="24 апреля 2017">
+								<input type="text" name="find-data-in" id="find-data-in" value="24 апреля 2017" placeholder="24 апреля 2017">
 								<button class="calendar-btn" type="button">
 									<span class="visually-hidden">Выбор даты</span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
@@ -108,7 +108,7 @@
 							</p>
 							<p class="inpt-wrapper">
 								<label for="find-data-out">Дата заезда:</label>
-								<input type="text" name="find-data-out" id="find-data-out" placeholder="4 июля 2017">
+								<input type="text" name="find-data-out" id="find-data-out" value="4 июля 2017" placeholder="4 июля 2017">
 								<button class="calendar-btn" type="button">
 									<span class="visually-hidden">Выбор даты</span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
@@ -124,7 +124,7 @@
 								<button class="minus-plus-btn minus-btn" type="button">
 									<span class="visually-hidden">Уменьшить значение</span>
 								</button>
-								<input type="text" name="find-adults" id="find-adults" placeholder="2">
+								<input type="text" name="find-adults" id="find-adults" value="2" placeholder="2">
 								<button class="minus-plus-btn plus-btn" type="button">
 									<span class="visually-hidden">Увеличить значение</span>
 								</button>
@@ -134,7 +134,7 @@
 								<button class="minus-plus-btn minus-btn" type="button">
 									<span class="visually-hidden">Уменьшить значение</span>
 								</button>
-								<input type="text" name="find-children" id="find-children" placeholder="0">
+								<input type="text" name="find-children" id="find-children" value="0" placeholder="0">
 								<button class="minus-plus-btn plus-btn" type="button">
 									<span class="visually-hidden">Увеличить значение</span>
 								</button>
@@ -147,6 +147,7 @@
 		</main>
 		<footer class="main-footer">
 			<div class="map-wrapper">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498216.0508187356!2d-112.06833032447024!3d34.88332973167314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1571132830356!5m2!1sru!2sru" width="1200" height="592"></iframe>
 				<img src="img/map.png" width="1200" height="592" alt="Адрес Седона штат Аризона">
 			</div>
 			<div class="footer-wrapper">
@@ -168,5 +169,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>
