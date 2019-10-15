@@ -991,10 +991,32 @@ body {
 	border-top: 1px solid #e5e5e5;
 }
 
+.map-wrapper {
+	position: relative;
+}
+
+.map-wrapper iframe{
+	position: relative;
+	z-index: 2;
+
+	border: none;
+}
+
+.map-wrapper p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	margin: 0;
+	padding: 0;
+}
+
 .footer-wrapper {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	z-index: 3;
 }
 
 .sedona-hashtag {
